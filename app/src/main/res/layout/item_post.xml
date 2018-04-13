@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_layout"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="#ECECEC"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cardview_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--头像，姓名，贴属性-->
+        <RelativeLayout
+            android:id="@+id/cardview_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_cardview_avatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_avatar"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/tv_cardview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/civ_cardview_avatar"
+                android:layout_centerInParent="true"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:text="14_自动化_物联网1班_郑伯涛"/>
+
+            <TextView
+                android:id="@+id/tv_cardview_post_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_cardview_name"
+                android:textSize="10dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_post_type_tv"
+                android:text="提问"
+                android:textColor="#D32F2F"/>
+
+        </RelativeLayout>
+
+        <!--标题-->
+        <TextView
+            android:id="@+id/tv_cardview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="英文早点 | 0329 - 继和中国贸易摩擦，美国又跟俄罗斯怼上了"/>
+
+        <RelativeLayout
+            android:background="@color/colorForImmersionTypeStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_cardview_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:text="2018-03-30 15:08"/>
+
+
+            <ImageView
+                android:id="@+id/im_cardview_ic_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_cardview_number_of_comment"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_post_comment_ffffff_48"/>
+
+
+            <TextView
+                android:id="@+id/tv_cardview_number_of_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:text="32"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入标题"
+                app:counterEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_new_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="英文早点 | 0329 - 继和中国贸易摩擦，美国又跟俄罗斯怼上了英文早点 | 0329 - 继和中国贸易摩擦，美国又跟俄罗斯怼上了"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/til_1"
+                android:hint="请输入内容"
+                app:counterEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_new_post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="关于休眠的问题，1611上重新测试，还是有问题的因为1810是高通平台，休眠测试需要串口以及测试方法，暂时还没有要到，结论现在无法给出"
+                    android:textSize="14dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_new_post_commit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/til_2"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_login_btn"
+                android:gravity="center"
+                android:text="提       交"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_remind_check_box_text"
+                android:layout_below="@id/btn_new_post_commit"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/cb_question"
+                android:text="请选择该贴类型"/>
+
+            <CheckBox
+                android:id="@+id/cb_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_new_post_commit"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/tv_remind_check_box_text"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:text="提问"
+                android:textColor="@color/colorForImmersionTypeStatusBar"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/cb_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_question"
+                android:layout_below="@id/btn_new_post_commit"
+                android:layout_marginTop="20dp"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:text="分享"
+                android:textColor="@color/colorForImmersionTypeStatusBar"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/cb_homework"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_share"
+                android:layout_below="@id/btn_new_post_commit"
+                android:layout_marginTop="20dp"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:text="作业"
+                android:textColor="@color/colorForImmersionTypeStatusBar"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

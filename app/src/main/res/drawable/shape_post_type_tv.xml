@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--使用shape可以自定义形状，可以定义下面四种类型的形状，通过android:shape属性指定,默认是：rectangle-->
+    <!--rectangle: 矩形，默认的形状，可以画出直角矩形、圆角矩形、弧形等,以下:-->
+        <!--solid: 设置形状填充的颜色，只有android:color一个属性-->
+        <!--padding: 设置内容与形状边界的内间距，可分别设置左右上下的距离-->
+        <!--gradient: 设置形状的渐变颜色，可以是线性渐变、辐射渐变、扫描性渐变-->
+        <!--corners: 设置圆角，只适用于rectangle类型，可分别设置四个角不同半径的圆角，当设置的圆角半-->
+        <!--stroke: 设置描边，可描成实线或虚线。-->
+    <!--oval: 椭圆形，用得比较多的是画正圆-->
+    <!--line: 线形，可以画实线和虚线-->
+    <!--ring: 环形，可以画环形进度条-->
+
+    <!--View背景色 #BDBDBD-->
+    <solid android:color="#ffffff" />
+
+    <!--边框圆角-->
+    <corners android:radius="2dp"/>
+
+    View上下左右的填充长度
+    <padding
+        android:left="2dp"
+        android:top="1dp"
+        android:right="2dp"
+        android:bottom="1dp" />
+
+    <!--边框颜色,长度-->
+    <stroke
+        android:width="1dp"
+        android:color="#D32F2F"/>
+
+</shape>

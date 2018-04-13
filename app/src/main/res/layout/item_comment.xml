@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_comment_item_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_avatar" />
+
+        <TextView
+            android:id="@+id/tv_comment_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/civ_comment_item_avatar"
+            android:text="14_自动化_物联网_1班 郑伯涛"
+            android:textColor="@color/colorForImmersionTypeStatusBar"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_comment_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2018-04-03  18:00:03"
+            android:textColor="@color/colorForImmersionTypeStatusBar"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_comment_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/civ_comment_item_avatar"
+            android:textSize="14dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="这个有点意思。我写了个长整的数据类型，定义了加减乘除运算，然后验算了一下文章给出的解，结论是他的结果是对的（跟没说一样）。我的长整类型是个数组，第一个数是正负号，第二个数是个位，第三个数是十位，以此类推。先新建一个longInteger.m，把后边的代码存进去，然后运行下边的主程序，你会发现a*(a+b)*(a+c)+b*(b+a)*(b+c)+c*(c+a)*(c+b)=4*(a+b)*(a+c)*(b+c)是成立的，等号两边是241位的数。"
+            />
+
+    </RelativeLayout>
+</ScrollView>

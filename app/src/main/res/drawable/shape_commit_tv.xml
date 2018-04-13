@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--View背景色 -->
+    <solid android:color="@color/colorForImmersionTypeStatusBar" />
+
+    <!--边框圆角-->
+    <corners android:radius="2dp"/>
+
+    View上下左右的填充长度
+    <padding
+        android:left="10dp"
+        android:top="3dp"
+        android:right="10dp"
+        android:bottom="3dp" />
+
+    <!--边框颜色,长度-->
+    <stroke
+        android:width="3dp"
+        android:color="#ECECEC"/>
+
+</shape>

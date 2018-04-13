@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@mipmap/ic_my_course_1976d2_40"
+            android:title="我的课程" />
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@mipmap/ic_my_post_1976d2_40"
+            android:title="我的帖子" />
+        <item
+            android:id="@+id/nav_comment"
+            android:icon="@mipmap/ic_my_comment_1976d2_40"
+            android:title="我的评论" />
+        <item
+            android:id="@+id/nav_homework"
+            android:icon="@mipmap/ic_my_homework_1976d2_40"
+            android:title="我的作业" />
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_todo_list"
+                android:icon="@mipmap/ic_tool_todo_list_1976d2_40"
+                android:title="Todo" />
+            <item
+                android:id="@+id/nav_timer"
+                android:icon="@mipmap/ic_tool_timer_1976d2_40"
+                android:title="Timer" />
+        </menu>
+    </item>
+
+</menu>
